@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo+Black&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/myweb.css">
+	<script src="js/jquery-1.10.2.min.js"></script>
+</head>
+<body>
+	<div id="main">
+		<div class="mp">
+				<p>	
+						By PAIGE ST. JOHN, ANNA M. PHILLIPS, JOSEPH SERNA, SONALI KOHLI , LAURA NEWBERRY
+						<br>NOV. 18, 20184 AM		
+				</p>
+			<h1>CALIFORNIA FIRE</h1>
+			<div class="text">What started as a tiny brush fire became <br>the state’s deadliest wildfire.  </div>
+		</div>
+
+		<div id="circle1">
+			<img src="images/circle1.png" height="1000px" width="1000px"/> 
+		</div>
+		<div id="layer"></div>
+			
+		<div class="foot"><a href="time.html">
+			<img src="images/jt.png" alt="">
+			<p>Here's How</p>
+		</a></div>
+		<a href="https://www.latimes.com/local/california/la-me-camp-fire-tictoc-20181118-story.html" target="blank" class="ori">original text</a>
+	</div>
+
+
+	
+
+	</body>
+
+	<script>
+        var circle1=$('#circle1');
+        
+        var layer=$('#layer');
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 12); 
+           var valueY=(e.pageY * -1 / 12); 
+            
+            circle1.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+        
+        
+    </script>
+
+
+	
+
+
+</html>
